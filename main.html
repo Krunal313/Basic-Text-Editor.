@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="editor">
+        <div class="format-buttons">
+            <button onclick="formatText('bold')">Bold</button>
+            <button onclick="formatText('italic')">Italic</button>
+            <button onclick="formatText('underline')">Underline</button>
+            <label>Font Size: <input type="number" id="fontSizeInput" min="1" max="100" value="16"></label>
+        </div>
+        <textarea id="textArea"></textarea>
+        <div class="button-group">
+            <button onclick="openFile()">Open</button>
+            <button onclick="saveFile()">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
